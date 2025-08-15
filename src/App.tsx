@@ -1,19 +1,7 @@
 import React from "react";
 import logoInverted from "./assets/images/logoInverted.png";
-import MenuItem from "./components/MenuItem";
 import BurgerMenu from "./components/BurgerMenu";
-
-const handleMenuItemClick = (e: React.MouseEvent<HTMLDivElement>) => {
-  // Handle menu item click
-  e.preventDefault();
-  if (e.currentTarget.className.includes("open")) {
-    // Do something when the menu is open
-    e.currentTarget.classList.remove("open");
-  }
-  else {
-    e.currentTarget.classList.add("open");
-  }
-};
+import MenuItems from "./components/MenuItems";
 
 const App: React.FC = () => {
   return (
@@ -27,12 +15,9 @@ const App: React.FC = () => {
                 tw:<span className="text-sky-900">mf</span>
               </div>
             </div>
-            <BurgerMenu handleClick={handleMenuItemClick} />
+            <BurgerMenu />
             <div className="hidden md:flex flex-1 items-center justify-end">
-              <MenuItem label="Home" />
-              <MenuItem label="Lineup" />
-              <MenuItem label="Tickets" subMenuItems={["VIP", "General"]} />
-              <MenuItem label="Support" />              
+              <MenuItems />
             </div>
           </nav>
         </header>
