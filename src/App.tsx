@@ -2,6 +2,7 @@ import React from "react";
 import logoInverted from "./assets/images/logoInverted.png";
 import BurgerMenu from "./components/BurgerMenu";
 import MenuItems from "./components/MenuItems";
+import Hero from "./components/Hero";
 
 const App: React.FC = () => {
   return (
@@ -20,6 +21,7 @@ const App: React.FC = () => {
               <MenuItems />
             </div>
           </nav>
+          <Hero />
         </header>
       </main>
     </>
