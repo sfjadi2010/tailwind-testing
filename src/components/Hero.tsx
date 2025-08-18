@@ -22,13 +22,13 @@ const Hero: React.FC = () => {
         <div className="text-sm mt-3 font-bold">
           Keep me updated with news and promotions
         </div>
-        <div className="mt-3 flex items-center justify-center">
+        <div className="mt-3 flex items-center justify-center text-2xl">
           <input
             type="email"
             placeholder="Enter your email"
-            className="p-2 rounded-l-sm border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500"
+            className="p-2 rounded-sm border border-white/40 bg-white/30 focus:outline-none focus:ring-1 focus:ring-pink-500 font-bold text-sky-300 placeholder-zinc-500 caret-pink-500"
           />
-          <button className="bg-pink-500 text-white px-2 py-2 rounded-r-sm hover:bg-pink-600 transition-colors">
+          <button type="submit" className="bg-pink-500 text-white px-2 py-2 rounded-sm transition-colors hover:bg-sky-900 hover:shadow-lg hover:shadow-black/20 ml-3">
             Subscribe
           </button>
         </div>
